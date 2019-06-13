@@ -56,9 +56,9 @@ public class Controller implements Initializable{
 
 	public void createPlayground() {
 		setButton.setOnAction(event -> {
-			/*playerOneTextField.setText("rajat rastogi");
-			playerTwoTextField.setText("arsh justa");*/
-
+			player1name=playerOneTextField.getText();
+			player2name=playerTwoTextField.getText();
+			playernameLabel.setText(isplayer1turn?player1name:player2name);
 		});
 		Shape rectanglewithHoles=createclickable();
 
